@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd131</title>
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Erubami Freedom</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Erubami Freedom. Dynamic web development using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Erubami Freedom">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <hi>WDD131 Erubami Freedom  </hi>
+
+<header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+    <nav aria-label="Primary Navigation">
+        <ul>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a></li>
+            <li><a href="#" target="_blank">Final Project Folder</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Erubami Freedom</h1>
+
+    <section class="card">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Portrait of Erubami Freedom">
+        <p>
+            My name is Erubami Freedom from Delta State, Nigeria, and I currently live in Lagos.
+            I work as a freelance architectural designer and aspire to become a software developer.
+            This motivation led me to enroll in BYU–Pathway Worldwide.
+            I enjoy soccer, and my favorite football team is Real Madrid.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Lagos City, Nigeria</h2>
+        <img src="images/lagos.jpg" alt="Skyline view of Lagos City, Nigeria">
+        <p>
+            Lagos is a major metropolitan city in southwestern Nigeria with an estimated population
+            of over 20 million people. It is the economic and financial hub of the country and one
+            of the fastest-growing megacities in the world.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> Erubami Freedom, Nigeria</p>
+    <p id="lastModified"></p>
+</footer>
+
 </body>
 </html>
