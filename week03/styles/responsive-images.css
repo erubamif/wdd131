@@ -1,0 +1,15 @@
+/* =========================
+   Responsive Image Styles
+========================= */
+.hero {
+    max-width: 100%;     /* Ensures hero container doesn't overflow */
+    margin: 0 auto;      /* Centers container */
+}
+
+.hero img {
+    width: 100%;         /* Scales image to container width */
+    height: auto;        /* Maintains aspect ratio */
+    display: block;      /* Removes small inline spacing */
+    object-fit: cover;   /* Maintains art direction without distortion */
+    border-radius: 8px;  /* Optional: rounded corners for aesthetics */
+}
