@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paris, France</title>
+  <meta name="description" content="Explore Paris, France—its landmarks, culture, and weather in a responsive web page.">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Paris, France</h1>
+</header>
+
+<!-- HERO (Responsive Image with srcset) -->
+<section class="hero">
+  <picture>
+    <source srcset="images/paris-large.webp" media="(min-width: 1000px)">
+    <source srcset="images/paris-medium.webp" media="(min-width: 750px)">
+    <img src="images/paris-small.webp" alt="View of the Eiffel Tower skyline in Paris, France" loading="lazy">
+  </picture>
+</section>
+
+<main>
+
+  <section class="info">
+    <h2>About Paris</h2>
+    <p>
+      Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy, and culture.
+    </p>
+    <p>
+      Its 19th-century cityscape features wide boulevards and the River Seine. Famous landmarks include the Eiffel Tower and Notre-Dame Cathedral.
+    </p>
+    <p>
+      The city is also known for its café culture and designer boutiques.
+    </p>
+  </section>
+
+  <section class="attractions">
+    <h2>Attractions</h2>
+    <ul>
+      <li>Eiffel Tower</li>
+      <li>Louvre Museum</li>
+      <li>Notre-Dame Cathedral</li>
+    </ul>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="weather">
+    <h2>Weather</h2>
+
+    <!-- SVG icon (mobile view REQUIRED) -->
+    <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+
+    <p>Temperature: <span id="temp"></span>°C</p>
+    <p>Wind Speed: <span id="wind"></span> km/h</p>
+    <p>Wind Chill: <span id="chill"></span></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> | Erubami Freedom | Paris, France |</p>
+  <p>Last Modified: <span id="modified"></span></p>
+</footer>
+
+</body>
+</html>

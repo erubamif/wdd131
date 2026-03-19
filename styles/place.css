@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1d3557;
+  --secondary: #e63946;
+  --light: #f1faee;
+  --dark: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+h2 {
+  color: var(--primary);
+}
+
+.weather-icon {
+  width: 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+}
+
+/* LARGE SCREEN */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .attractions {
+    grid-column: span 2;
+  }
+
+  /* Hide SVG on large view */
+  .weather-icon {
+    display: none;
+  }
+
+  /* Emoji weather icon */
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
