@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <!-- Character Encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>Filtered Temple Album</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Explore a photo album of beautiful temples with filtering options and responsive lazy-loaded images.">
+
+  <!-- Author -->
+  <meta name="author" content="Erubami Freedom">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- JavaScript File -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>Temple Album</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+   <main id="temple-cards">
+      <!-- Temple cards will be dynamically inserted here -->
+   </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Erubami Freedom. Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

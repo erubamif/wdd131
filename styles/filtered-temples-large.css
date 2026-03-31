@@ -1,0 +1,40 @@
+@media only screen and (min-width: 48rem) { /* 768px+ */
+
+    body {
+        background-color: #b2dfdb; /* richer teal for larger screens */
+        color: #00251a; /* darker text */
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #004d40; /* richer heading */
+    }
+
+    header {
+        background-color: #00695c; /* darker teal header */
+    }
+
+    nav a {
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        background-color: #ff5722; /* deeper coral hover */
+        color: #ffffff;
+    }
+
+    main {
+        max-width: 1000px;
+        gap: 1.5rem;
+    }
+
+    figure {
+        box-shadow: 0 4px 10px rgba(0, 77, 64, 0.3); /* stronger shadow for desktop */
+    }
+
+    footer {
+        padding: 1.5rem;
+        background-color: #00695c;
+    }
+}
