@@ -1,39 +1,26 @@
-/* Color Schema from Plan */
-:root {
-    --primary-color: #c1121f;   /* red */
-    --secondary-color: #2a9d8f; /* green */
-    --background-color: #f8f9fa;
-    --text-color: #333;
-}
-
-/* Typography */
 body {
-    font-family: Arial, sans-serif; /* body font */
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
     margin: 20px;
 }
 
-/* Headings use second font */
 h1, h2, h3 {
-    font-family: Georgia, serif; /* heading font */
-    color: var(--primary-color);
+    font-family: Georgia, serif;
+    color: #c1121f;
 }
 
-/* Section styling */
 section {
-    border-left: 5px solid var(--secondary-color);
+    border-left: 5px solid #2a9d8f;
     padding: 10px;
     margin-bottom: 20px;
     background-color: white;
 }
 
-/* Lists */
 ul {
     padding-left: 20px;
 }
 
-/* Wireframe text styling */
 p {
     line-height: 1.5;
 }
