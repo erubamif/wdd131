@@ -1,158 +1,94 @@
 /* ===== Base Styles ===== */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f7f8; /* soft light background */
-  color: #333333;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #1a1a1a;
 }
 
-h1 {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin: 1rem 0;
-  color: #2c3e50;
+header {
+    background-color: #0b3d91; /* dark blue */
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
 }
 
-/* ===== Form Container ===== */
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Form Layout ===== */
 form {
-  max-width: 600px;
-  margin: 2rem auto;
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-/* ===== Labels & Inputs ===== */
 label {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 0.3rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
 }
 
 input[type="text"],
 input[type="date"],
 select,
 textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: border-color 0.3s;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-input[type="text"]:focus,
-input[type="date"]:focus,
-select:focus,
-textarea:focus {
-  border-color: #3498db; /* focus color for usability */
-  outline: none;
-}
-
-/* ===== Radio & Checkbox Groups ===== */
 fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
 }
 
 legend {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
+/* Radio buttons and checkboxes inline */
 input[type="radio"],
 input[type="checkbox"] {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
 }
 
-label > input[type="radio"],
-label > input[type="checkbox"] {
-  vertical-align: middle;
-}
-
-/* ===== Submit Button ===== */
 input[type="submit"] {
-  background-color: #3498db;
-  color: #ffffff;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    background-color: #0b3d91;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  background-color: #2980b9;
+    background-color: #06286b;
 }
 
-/* ===== Field Group Spacing ===== */
-fieldset + fieldset,
-label + fieldset,
-textarea + fieldset {
-  margin-top: 1rem;
-}
-
-/* ===== Footer Styles ===== */
+/* Footer */
 footer {
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  background-color: #2c3e50;
-  color: #ffffff;
-}
-
-/* ===== Responsive Design ===== */
-@media only screen and (min-width: 600px) {
-  form {
-    padding: 3rem;
-  }
-
-  input[type="submit"] {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-}
-
-/* ===== Header & Navigation ===== */
-header {
-    background-color: #002366; /* dark blue background */
-    color: #ffffff; /* white text for contrast */
-    padding: 1rem;
     text-align: center;
-}
-
-@media only screen and (min-width: 48rem) {
-    header {
-        background-color: #001244; /* even darker blue for desktop */
-    }
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff; /* white text */
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-    background-color: #0055aa; /* lighter blue hover */
-    color: #ffffff; /* keep text white */
-}
-
-@media only screen and (min-width: 48rem) {
-    nav a:hover {
-        background-color: #0073e6; /* brighter blue on desktop */
-        color: #ffffff;
-    }
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #0b3d91;
+    color: #ffffff;
+    font-size: 0.9rem;
 }

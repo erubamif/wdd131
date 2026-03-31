@@ -1,86 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Review Form</title>
-  <meta name="description" content="Submit your product review using this form.">
-  <meta name="author" content="Erubami Freedom">
-  <link rel="stylesheet" href="styles/form.css">
-  <script defer src="scripts/form.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Submit your detailed product review, including rating, features, and comments, to help us improve our products.">
+    <meta name="author" content="Erubami Freedom">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/review.css">
+
+    <!-- JavaScript File -->
+    <script src="scripts/review.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Submit Your Product Review</h1>
+    </header>
 
-<header>
-  <h1>Product Review Form</h1>
-</header>
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options will be populated dynamically by JavaScript -->
+            </select>
 
-<main>
-  <form id="reviewForm" method="get" action="review.html">
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2">☆</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">☆</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">☆</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">☆</label>
+            </fieldset>
 
-    <!-- Product Name -->
-    <label for="product">Product Name:</label>
-    <select id="product" name="product" required>
-      <option value="" disabled selected>Select a Product ...</option>
-      <!-- Options will be populated dynamically -->
-    </select>
+            <!-- Date of Installation -->
+            <label for="install-date">Date of Installation:</label>
+            <input type="date" id="install-date" name="install-date" required>
 
-    <!-- Overall Rating -->
-    <fieldset>
-      <legend>Overall Rating:</legend>
-      <label>
-        <input type="radio" id="star1" name="rating" value="1" required> 1☆
-      </label>
-      <label>
-        <input type="radio" id="star2" name="rating" value="2"> 2☆
-      </label>
-      <label>
-        <input type="radio" id="star3" name="rating" value="3"> 3☆
-      </label>
-      <label>
-        <input type="radio" id="star4" name="rating" value="4"> 4☆
-      </label>
-      <label>
-        <input type="radio" id="star5" name="rating" value="5"> 5☆
-      </label>
-    </fieldset>
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <input type="checkbox" id="feature1" name="features" value="feature1">
+                <label for="feature1">Feature 1</label>
 
-    <!-- Date of Installation -->
-    <label for="installDate">Date of Installation:</label>
-    <input type="date" id="installDate" name="installDate" required>
+                <input type="checkbox" id="feature2" name="features" value="feature2">
+                <label for="feature2">Feature 2</label>
 
-    <!-- Useful Features -->
-    <fieldset>
-      <legend>Useful Features:</legend>
-      <label>
-        <input type="checkbox" id="feature1" name="features" value="Ease of Use"> Ease of Use
-      </label>
-      <label>
-        <input type="checkbox" id="feature2" name="features" value="Performance"> Performance
-      </label>
-      <label>
-        <input type="checkbox" id="feature3" name="features" value="Design"> Design
-      </label>
-      <label>
-        <input type="checkbox" id="feature4" name="features" value="Durability"> Durability
-      </label>
-    </fieldset>
+                <input type="checkbox" id="feature3" name="features" value="feature3">
+                <label for="feature3">Feature 3</label>
 
-    <!-- Written Review -->
-    <label for="review">Written Review:</label>
-    <textarea id="review" name="review" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+                <input type="checkbox" id="feature4" name="features" value="feature4">
+                <label for="feature4">Feature 4</label>
+            </fieldset>
 
-    <!-- User Name -->
-    <label for="userName">Your Name:</label>
-    <input type="text" id="userName" name="userName" placeholder="Optional">
+            <!-- Written Review -->
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
 
-    <!-- Submit Button -->
-    <input type="submit" value="Submit Review">
+            <!-- User Name -->
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username">
 
-  </form>
-</main>
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
 
-<footer>
-  <p>&copy; <span id="year"></span> Erubami Freedom. Last modified: <span id="last-modified"></span></p>
-</footer>
-
+    <footer>
+        <p>&copy; <span id="year"></span> Erubami Freedom. Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
