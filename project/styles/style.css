@@ -1,0 +1,170 @@
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    background-color: #c1121f; /* bright red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+main {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   HEADINGS
+   ========================= */
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+section {
+    border-left: 5px solid #2a9d8f;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* =========================
+   RECIPE CARDS (GRID)
+   ========================= */
+.recipe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+button {
+    background-color: #c1121f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #780000;
+}
+
+/* =========================
+   FORM STYLING
+   ========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    background-color: #003049; /* dark blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #fcbf49; /* gold accent */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+@media (min-width: 768px) {
+    .recipe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .recipe-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

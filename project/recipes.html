@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Erubami Freedom">
+    <meta name="description" content="Browse Nigerian traditional recipes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Naija Flavors - Recipes</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Naija Flavors</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Our Nigerian Recipes</h2>
+<p>Explore traditional dishes and learn how to prepare them step by step.</p>
+
+    <!-- Filter Buttons -->
+    <section>
+        <button onclick="filterRecipes('all')">All</button>
+        <button onclick="filterRecipes('rice')">Rice</button>
+        <button onclick="filterRecipes('soup')">Soup</button>
+        <button onclick="filterRecipes('swallow')">Swallow</button>
+    </section>
+
+    <!-- Recipe Display -->
+    <section>
+        <div id="recipe-list" class="recipe-container"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Naija Flavors</p>
+    <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>
